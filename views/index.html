@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Blog Personal</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <!-- Cabecera principal -->
+        <header>
+            <h1>Blog Personal</h1>
+        </header>
+
+        <!-- Barra de navegacion -->
+
+        <nav>
+            <ul>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Archivos</a></li>
+                <li><a href="#">Contactos</a></li>
+                <li class="subscribe"><a href="#">Suscribe via. RSS</a></li>
+            </ul>
+        </nav>
+
+
+        <section id="intro">
+            <header>
+                <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+            </header>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis tempora,
+                 nisi cupiditate nostrum consectetur alias similique cumque libero quam deserunt.</p>
+        </section>
+        <section>
+            <article class="blogPost">
+                <header>
+                    <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+                    <p>Posteando <time datetime="2009-06-29T23:31:45+01:00"> Diciembre 10</time> by <a href="#">Shingo Sabuky</a> -  <a href="#comments"></a> </p>
+                </header>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt fugit minima totam nihil
+                    aspernatur odio ipsum possimus, cumque, dolor harum!</p>
+            </article>
+        </section>
+
+        <aside>
+            <section id="comments">
+                <header>
+                    <h3>Comentarios</h3>
+                </header>
+                <article>
+                    <header>
+                        <a href="#">Carlos Menem</a> on <time datetime="2009-06-29T23:35:20+01:00">June 29th 2009 at 23:35</time>
+                    </header>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, odio. Sed recusandae veritatis at ex sit delectus, reprehenderit quod perferendis.</p>
+                    <header>
+                        <a href="#">Carlos Menem</a> on <time datetime="2009-06-29T23:35:20+01:00">June 29th 2009 at 23:35</time>
+                    </header>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, odio. Sed recusandae veritatis at ex sit delectus, reprehenderit quod perferendis.</p>
+
+                </article>
+            </section>
+        </aside>
+        <footer>
+            <form action="#" method="POST">
+                <h3>Comentario en el Post</h3>
+                <p>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="name" name="nombre" required placeholder="Juancho">
+                </p>
+                <p>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Juancho@algo.com">
+                </p>
+                <p>
+                    <label for="web">Website</label>
+                    <input type="url" id="website" name="website" placeholder="www.juancho.com">
+                </p>
+                <p>
+                    <label for="comment">Comentarios</label>
+                    <textarea name="comment" id="comment" cols="30" rows="10" required></textarea>
+                </p>
+                <p><input type="submit" value="Comentar en el post"></p>
+            </form>
+        </footer>
+    </body>
+</html>
